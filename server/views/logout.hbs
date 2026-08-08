@@ -1,7 +1,15 @@
 {{> header}}
-<div class="login-signup-message" hx-get="/" hx-trigger="load delay:1s" hx-target="body" hx-push-url="/">
+
+<div class="login-signup-message">
   <h1>
     Logged out. Redirecting to homepage...
   </h1>
 </div>
+
+<script>
+  window.setTimeout(function () {
+    window.location.replace("/");
+  }, 1000);
+</script>
+
 {{> footer}}
